@@ -1,0 +1,31 @@
+//To swap the nibbles, we can use bitwise &, bitwise ” operators. A byte can be represented using an unsigned char in C as size of char is 1 byte in a typical C compiler.  Below is the implementation of the above idea. 
+#include <stdio.h>
+unsigned char swapNibbles(unsigned char x)
+{
+    return ( (x & 0x0F)<<4 | (x & 0xF0)>>4 );
+}
+int main()
+{
+    unsigned char x = 100;
+    printf("%u", swapNibbles(x));
+    return 0;
+}
+Output
+70
+
+//HOW TO WRITE PROGRAM IN C FOR SWAP ON NIBBLE 0X79
+#include <stdio.h>
+int main() 
+{
+    unsigned char num = 0x79; // Original number
+    unsigned char swapped_num;
+    // Swap the nibbles
+    swapped_num = ((num & 0x0F) << 4) | ((num & 0xF0) >> 4);
+    // Print the result
+    printf("Original number: 0x%X\n", num);
+    printf("Swapped number: 0x%X\n", swapped_num);
+    return 0;
+}
+OUTPUT:
+Original number: 0x79
+Swapped number: 0x97
