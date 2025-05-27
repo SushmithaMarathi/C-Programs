@@ -46,5 +46,27 @@ Output:
 5 * 10 = 50 
 --------------------
 Program:
+#include <stdio.h>
+void main()
+{
+int a=10;
+printf("%d\n",++a);//11
+printf("%d\n",a++);//11
+printf("%d\n",++a);//13
+printf("%d\n",a++);//13
+printf("%d\n",a++);//14 ++a;
+printf("%d\n",a++);//16 a++;
+printf("%d\n",a);//18
+}
+Output:
+11
+11
+13
+13
+14
+15
+16
+---------------
+Program:
 
 
