@@ -1,0 +1,24 @@
+Program:
+#include<stdio.h>
+int add(int, int);
+int main()
+{
+int a, b;
+printf("Enter a & b\n");
+scanf("%d %d", &a, &b);
+add(a,b);//calling
+return 0;
+}
+int add(int x, int y)
+{
+int res;
+res=x+y;
+printf ("Addition is %d\n", res);
+}
+Output:
+Enter a & b
+23
+13
+Addition is 36
+---------------
+Program:
