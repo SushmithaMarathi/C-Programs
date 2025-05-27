@@ -1,3 +1,4 @@
+Program:
 #include <stdio.h>
 int main() {
     int regno;
@@ -8,5 +9,33 @@ scanf("%d %s %s %id %d %s\n", &regno , sname, address, &phonenumber);
 printf("Student details are:\nregno %d\n name %s\n address %s\n Phone number l%d\n\n", regno, sname, address, phonenumber);
     return 0;
 }
+Output:
 
+-------------
+program:
+#include <stdio.h>
+int main()
+{
+int num = 1,tab=5;
+while (num <= 10)
+{
+printf("%d * %d = %d \n", tab, num, tab*num);
+num++;
+}
+    return 0;
+}
+Output:
+5 * 1 = 5 
+5 * 2 = 10 
+5 * 3 = 15 
+5 * 4 = 20 
+5 * 5 = 25 
+5 * 6 = 30 
+5 * 7 = 35 
+5 * 8 = 40 
+5 * 9 = 45 
+5 * 10 = 50 
+
+
+=== Code Execution Successful ===
 
