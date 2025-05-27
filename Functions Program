@@ -76,4 +76,35 @@ fibonacci series for 4 is :
 0112
 ----------------------
 Program:
+// Prime Numbers using Function
+#include <stdio.h>
+int prime(int);
+int main()
+{
+int n,res;
+printf("Enter a number \n", n);
+scanf("%d",&n);
+res=prime(n);
+if(res==1)
+printf("%d is prime\n");
+else
+printf("%d is not prime\n");
+return 0;
+}
+int prime(int a)
+{
+int c;
+for (c=2; c<=a-1; c++)
+{
+    if(a%c==0)
+    return 0;
+}
+return 1;
+}
+Output:
+Enter a number 
+23
+23 is prime
+------------------------
+Program:
 
