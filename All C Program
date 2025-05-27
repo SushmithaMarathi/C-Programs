@@ -10,7 +10,16 @@ printf("Student details are:\nregno %d\n name %s\n address %s\n Phone number l%d
     return 0;
 }
 Output:
-
+Enter Person regisration number Students name address Phone number:
+131921
+sushi
+ashwath
+8769054321
+Student details are:
+regno 131921
+ name sushi
+ address ashwath
+ Phone number 308178816
 -------------
 program:
 #include <stdio.h>
@@ -35,7 +44,7 @@ Output:
 5 * 8 = 40 
 5 * 9 = 45 
 5 * 10 = 50 
+--------------------
+Program:
 
-
-=== Code Execution Successful ===
 
