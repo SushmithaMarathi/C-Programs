@@ -68,5 +68,28 @@ Output:
 16
 ---------------
 Program:
+#include<stdio.h>
+int main()
+{
+int a=10;
+printf("%d\n",--a);//9
+printf("%d\n",a--);//9
+printf("%d\n",--a);//7
+printf("%d\n",a--);//7
+printf("%d\n",a--);//6
+//--а;
+printf("%d\n",a--);//4 printf("%d\n",a);//2
+a--;
+return 0;
+}
+Output:
+9
+9
+7
+7
+6
+5
+------------
+Program:
 
 
