@@ -47,4 +47,33 @@ enter x & y values
 Addition is 36
 --------------------
 Program:
+// Fibonacci Series using Function
+#include <stdio.h>
+int fibo(int);
+int main()
+{
+int n;
+printf("Enter a number \n", n);
+scanf("%d",&n);
+fibo (n);
+}
+int fibo(int n)
+{
+int i, a=0, b=1, c=0;
+printf("fibonacci series for %d is : \n", n) ;
+for (i=0; i<n; i++)
+{
+    printf("%d",c);
+a=b;
+b=c;
+c = a + b;
+}
+}
+Output:
+Enter a number 
+4
+fibonacci series for 4 is : 
+0112
+----------------------
+Program:
 
