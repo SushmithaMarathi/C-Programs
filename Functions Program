@@ -22,3 +22,29 @@ Enter a & b
 Addition is 36
 ---------------
 Program:
+#include<stdio.h>
+int sum();
+int main()
+{
+int z;
+printf("Sum of 2 Numbers\n");
+z=sum();//calling
+return 0;
+}
+int sum(int x,int y)
+{
+int res;
+printf("enter x & y values\n");
+scanf("%d %d",&x,&y);
+res=x+y;
+printf ("Addition is %d\n", res);
+}
+Output:
+Sum of 2 Numbers
+enter x & y values
+23
+13
+Addition is 36
+--------------------
+Program:
+
