@@ -51,3 +51,22 @@ enter the values for a & b
 after swapping the values of a =13 values of b=23
 ---------------------
 Program:
+#include<stdio.h>
+int main()
+{
+int a, b;
+printf("enter the values for a & b\n");
+scanf("%d %d",&a,&b);
+a=a+b;
+b=a-b;
+a=a-b;
+printf("after swapping the values of a =%d values of b=%d\n",a,b);
+return 0;
+}
+enter the values for a & b
+23
+13
+after swapping the values of a =13 values of b=23
+--------------------
+Program:
+
