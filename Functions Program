@@ -107,4 +107,49 @@ Enter a number
 23 is prime
 ------------------------
 Program:
+//Armstrong Program using Function
+#include <stdio.h>
+int power(int, int);
+int main()
+{
+int n, sum = 0, t, remainder, digits=0;
+printf("Input an 3 digit number\n");
+scanf("%d",&n);
+t=n;
+while (t!=0)
+{
+digits++;
+t=t/10;
+}
+t=n;
+while (t!=0)
+{
+remainder=t%10;
+sum=sum+power(remainder, digits);
+t=t/10;
+}
+if(n==sum)
+{
+    printf("%d is an Armstrong\n",n);
+}
+else
+{
+    printf("%d is not Armstrong\n",n);
+}
+return 0;
+}
+int power(int n, int r)
+{
+    int c, p=1;
+    for(c=1;c<=r;c++)
+    p=p*r;
+    return p;
+}
+Output:
+Input an 3 digit number
+371
+371 is not Armstrong
+---------------------
+Program:
+
 
