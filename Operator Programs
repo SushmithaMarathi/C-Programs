@@ -69,4 +69,16 @@ product is 299
 quo is 1
 rem is 10
 -----------------
+//Logical Operator
+Program:
+#include<stdio.h>
+void main()
+{
+int a=2,b=7;
+int x=(++a && b++);
+printf("a=%d b=%d x=%d\n",a,b,x);//3 8 1
+}
+Output:
+a=3 b=8 x=1
+-------------
 Program:
