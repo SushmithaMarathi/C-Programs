@@ -43,5 +43,30 @@ Output:
 7
 6
 5
-------------
+--------------
+//Binary Operator
+//Arithmetic Operator
+Program:
+#include<stdio.h>
+void main()
+{
+int a,b;
+printf("enter the value for a,b\n");
+scanf("%d %d",&a,&b);
+printf("sum is %d\n",a+b);
+printf("diff is %d\n",a-b);
+printf("product is %d\n",a*b);
+printf("quo is %d\n",a/b);
+printf("rem is %d\n",a%b);
+}
+Output:
+enter the value for a,b
+23
+13
+sum is 36
+diff is 10
+product is 299
+quo is 1
+rem is 10
+-----------------
 Program:
