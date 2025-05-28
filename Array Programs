@@ -1,0 +1,35 @@
+Program:
+#include <stdio.h>
+int main()
+{
+int regno;
+char pname[15], dob[10];
+long int pnum;
+printf("Enter reg no \n");
+scanf ("%d", &regno);
+printf("Enter Parent name \n");
+scanf("%s",pname);
+printf("Enter date of birth \n");
+scanf("%s", &dob);
+printf("Enter Phone number \n");
+scanf("%ld", &pnum);
+printf("Reg No is : %d\n", regno);
+printf("Parents name is : %s\n",pname);
+printf(" DOB is: %s\n", dob);
+printf("mobile number is: %ld\n",pnum) ;
+return 0;
+}
+Enter reg no 
+131921
+Enter Parent name 
+Ajay
+Enter date of birth 
+19072023
+Enter Phone number 
+9807654321
+Reg No is : 131921
+Parents name is : Ajay
+ DOB is: 19072023
+mobile number is: 9807654321
+--------------------------
+Program:
