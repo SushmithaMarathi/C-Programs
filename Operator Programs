@@ -82,3 +82,14 @@ Output:
 a=3 b=8 x=1
 -------------
 Program:
+#include<stdio.h>
+void main()
+{
+int a=-1,b=7;
+int x=(++a && b++);
+printf("a=%d b=%d x=%d\n",a,b,x);//0 7 0
+}
+Output:
+a=0 b=7 x=0
+------------------
+Program:
