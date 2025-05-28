@@ -1,0 +1,47 @@
+//Unary Operator
+Program:
+#include <stdio.h>
+void main()
+{
+int a=10;
+printf("%d\n",++a);//11
+printf("%d\n",a++);//11
+printf("%d\n",++a);//13
+printf("%d\n",a++);//13
+printf("%d\n",a++);//14 ++a;
+printf("%d\n",a++);//16 a++;
+printf("%d\n",a);//18
+}
+Output:
+11
+11
+13
+13
+14
+15
+16
+---------------
+Program:
+#include<stdio.h>
+int main()
+{
+int a=10;
+printf("%d\n",--a);//9
+printf("%d\n",a--);//9
+printf("%d\n",--a);//7
+printf("%d\n",a--);//7
+printf("%d\n",a--);//6
+//--а;
+printf("%d\n",a--);//4 printf("%d\n",a);//2
+a--;
+return 0;
+}
+Output:
+9
+9
+7
+7
+6
+5
+------------
+Program:
