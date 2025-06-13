@@ -1,0 +1,28 @@
+PROGRAM:
+#include <stdio.h>
+int add(int a,int b)
+{
+    return (a+b);
+}
+int mul(int a,int b)
+{
+    return (a*b);
+}
+int calci(int m,int n,int(*fptr)(int,int))
+{
+    return (fptr(m,n));
+}
+int main() 
+{
+    int a=10;
+    int b=20;
+    int sum,prod;
+    sum=calci(a,b,&add);
+    prod=calci(a,b,&mul);
+    printf("Sum=%d\n",sum);
+     printf("Product=%d\n",prod);
+    return 0;
+}
+OUTPUT:
+Sum=30
+Product=200
