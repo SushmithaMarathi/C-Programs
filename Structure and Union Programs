@@ -56,3 +56,63 @@ S
 char=S
 int=23
 float=13.210000
+PROGRAM:
+#include <stdio.h>
+struct test
+{
+    char a;
+    int b;
+    float c;
+}s;
+void fun(struct test *s1)
+{
+    printf("Function 1:\n");
+    printf("char=%c\n",s1->a);
+    printf("int=%d\n",s1->b);
+    printf("float=%f\n",s1->c);
+    s1->a='M';
+    s1->b=100;
+    s1->c=2.5;
+    printf("Function 2:\n");
+    printf("char=%c\n",s1->a);
+    printf("int=%d\n",s1->b);
+    printf("float=%f\n",s1->c);
+}
+int main() {
+    struct test *ptr=&s;
+    printf("Enter the char, int, float values\n");
+    scanf("%c",&s.a);
+    scanf("%d",&s.b);
+    scanf("%f",&s.c);
+    printf("Main Function:\n");
+    printf("char=%c\n",s.a);
+    printf("int=%d\n",s.b);
+    printf("float=%f\n",s.c);
+    fun(ptr);
+    printf("Function 4:\n");
+    printf("char=%c\n",s.a);
+    printf("int=%d\n",s.b);
+    printf("float=%f\n",s.c);
+    return 0;
+}
+OUTPUT:
+Enter the char, int, float values
+S
+13
+23.13
+Main Function:
+char=S
+int=13
+float=23.129999
+Function 1:
+char=S
+int=13
+float=23.129999
+Function 2:
+char=M
+int=100
+float=2.500000
+Function 4:
+char=M
+int=100
+float=2.500000
